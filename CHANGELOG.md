@@ -37,5 +37,10 @@ Will become CHANGELOG for grscheller.boring_math
 
 ### Version 0.0.0.1 - commit date 2023-12-06
 
-* First non-trivial commit
-* 
+* Fixed Markdown issues with first commit.
+* Added .gitignore file to anticipate pytest & __pycache__ directories
+ 
+### Version 0.0.0.0 - commit date 2023-12-06
+
+* First commit of source code with with the old pipfile build
+  infrastructure removed.
