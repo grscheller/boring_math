@@ -35,12 +35,23 @@ Will become CHANGELOG for grscheller.boring_math
 
 ## Version - PyPI releases begin with "v"
 
+### Version 0.0.0.3 - commit date 2023-12-06
+
+* added pyproject.toml
+
+### Version 0.0.0.2 - commit date 2023-12-06
+
+* got package working again
+  * did not understand iterators that well when I first wrote this package
+* replaced my `take` with `itertools.islice`
+* generated docs from docstrings with pdoc3
+
 ### Version 0.0.0.1 - commit date 2023-12-06
 
-* Fixed Markdown issues with first commit.
+* fixed Markdown issues with first commit
 * Added .gitignore file to anticipate pytest & __pycache__ directories
  
 ### Version 0.0.0.0 - commit date 2023-12-06
 
-* First commit of source code with with the old pipfile build
+* first commit of source code with with the old pipfile build
   infrastructure removed.
