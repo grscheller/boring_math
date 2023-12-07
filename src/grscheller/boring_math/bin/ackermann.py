@@ -1,4 +1,4 @@
-#!/usr/bin/env pypy3
+#!/usr/bin/env python
 # Copyright 2016-2023 Geoffrey R. Scheller
 # 
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,6 @@ __author__ = "Geoffrey Scheller"
 import sys
 from grscheller.boring_math.integer_math import ackermann
 
-
 def main():
     """Main entry point for ackerman.py"""
 
@@ -40,8 +39,7 @@ def main():
             m_arg = int(args[0])
             n_arg = int(args[1])
             if m_arg < 0 or n_arg < 0:
-                print("Error: Negative integer argument given"
-                      , file=sys.stderr)
+                print("Error: Negative integer argument given" , file=sys.stderr)
                 sys.exit(1)
         except ValueError:
             print("Error: Non-integer argument given", file=sys.stderr)
@@ -52,7 +50,6 @@ def main():
 
     # Compute value
     print(ackermann(m_arg, n_arg))
-
 
 if __name__ == "__main__":
     main()

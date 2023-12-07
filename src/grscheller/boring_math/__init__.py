@@ -12,13 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Package grscheller.datastructures
+"""Package grscheller.boring_math
 
-   Data structures supporting a functional style of programming, yet still
-   endeavor to be Pythonic.
+   Pyton based mathematics library and example executables.
 """
 
-__version__ = "0.0.0.1"
+__version__ = "0.0.0.2"
 __author__ = "Geoffrey R. Scheller"
 __copyright__ = "Copyright (c) 2023 Geoffrey R. Scheller"
 __license__ = "Appache License 2.0"

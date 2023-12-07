@@ -20,11 +20,10 @@ Library of functions of an integer pure math nature.
 __author__ = "Geoffrey R. Scheller"
 
 import sys
-from grscheller.func_tools.func_tools import take
+from itertools import islice
 
 __all__ = ['gcd', 'lcm', 'primes',
-           'pythag3',
-           'ackermann',
+           'pythag3', 'ackermann',
            'fibonacci', 'fibonacci_list', 'fibonacci_tuple',
            'fibonacci_mult', 'fibonacci_mult_list', 'fibonacci_mult_tuple']
 
@@ -199,7 +198,7 @@ def fibonacci(fib0=0, fib1=1, count=None):
     """
     if count is None:
         return _fibonacci(fib0, fib1)
-    return take(count, _fibonacci(fib0, fib1))
+    return islice(_fibonacci(fib0, fib1), count)
 
 def fibonacci_list(fib0=0, fib1=1, count=10):
     """Returns an list with a fibonacci sequence"""

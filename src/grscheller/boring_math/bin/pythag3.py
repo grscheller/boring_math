@@ -1,4 +1,4 @@
-#!/usr/bin/env pypy3
+#!/usr/bin/env python
 # Copyright 2016-2023 Geoffrey R. Scheller
 #
 # 
@@ -22,17 +22,13 @@ that a^2 + b^2 = c^2 where x,y,z > 0 and gcd(a,b,c) = 1
 Usage: pythag3.py n [m]
 
 If called with one argument generate all triples with a <= n.
-If called with two arguments generate all triples with
-a <= n and a,b,c <= m
-
-For pythag3.py to find pureMath library: export PYTHONPATH=../lib
+If called with two arguments generate all triples with a <= n and a,b,c <= m
 """
 
 __author__ = "Geoffrey Scheller"
 
 import sys
 from grscheller.boring_math.integer_math import pythag3
-
 
 def main():
     """Main entry point for pythag3.py"""
@@ -50,7 +46,6 @@ def main():
     # Print out Pythagean Triples
     for triple in pythag3_iter:
         print(triple)
-
 
 if __name__ == "__main__":
     main()
